@@ -1,22 +1,198 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Jura|Roboto&display=swap");
+.container {
+    padding-bottom: 20px;
+    margin: 0px;
+    background-color: #112831;
+    color: #E4F1F6;
+    box-shadow: inset 0 0 10px 5px #E4F1F6;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
+:focus {
+    outline: 1px solid #E4F1F6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container.usingMouse :focus {
+    outline: none;
 }
 
-.App-link {
-  color: #09d3ac;
+header {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Jura';
+    text-shadow: 1px 1px 10px;
+    color: #E4F1F6;
+}
+
+.FlexBox {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.DisplayArea {
+    width: 48%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: stretch;
+    border: 1px solid #E4F1F6;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px rgba(149, 165, 166, 0.4);
+    background-color: rgba(26, 63, 76, 0.7);
+    min-height: 50vh;
+    margin: 5px;
+    overflow-x: scroll;
+    transition: width 1s, height 1s;
+}
+
+.max {
+    width: 92.7vw;
+    height: auto;
+    min-height: 66.66vh;
+    transition: width 1s, height 1s;
+}
+
+.hide {
+    width: 0vw;
+    height: auto;
+    transition: width 1s, height 1s;
+}
+
+.ToolBar {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #E4F1F6;
+    border-radius: 3px;
+    background-color: transparent;
+    width: 100%;
+    min-height: 25px;
+}
+
+.ToolBar .ToolBarLeft {
+    font-family: 'Jura';
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.ToolBar .ToolBarLeft .SubHeader {
+    margin: 0px;
+}
+
+.ToolBar .ToolBarRight {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+.ToolBar .ToolBarRight #CLR-BTN,
+.ToolBar .ToolBarRight #RST-BTN {
+    margin: 2px;
+    background-color: transparent;
+    color: #E4F1F6;
+    border: 1px solid #E4F1F6;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ToolBar .ToolBarRight #CLR-BTN:hover,
+.ToolBar .ToolBarRight #RST-BTN:hover {
+    background-color: #E4F1F6;
+    color: #112831;
+}
+
+.ToolBar .ToolBarRight .SizeBtn {
+    background: none;
+    height: 100%;
+    width: 3%;
+    padding: 0px;
+    border: none;
+    color: #E4F1F6;
+    margin-left: 5px;
+    transition: transform 1s;
+}
+
+.ToolBar .ToolBarRight .SizeBtn:hover {
+    transform: rotate(180deg);
+}
+
+.ToolBar .ToolBarRight .minbtn {
+    display: none;
+}
+
+#editor {
+    background-color: transparent;
+    border: none;
+    color: #E4F1F6;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 3%;
+}
+
+#preview {
+    padding: 3%;
+    height: 100%;
+}
+
+code {
+    background-color: #E4F1F6;
+    color: #112831;
+    font-family: monospace;
+    display: inline-block;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 2px solid #E4F1F6;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .container {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .FlexBox {
+        flex-direction: column;
+        justify-content: stretch;
+        align-content: stretch;
+    }
+    .DisplayArea {
+        width: 90vw;
+        height: 100vh;
+    }
+    .SizeBtn {
+        display: none;
+    }
 }
