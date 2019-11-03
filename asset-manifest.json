@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/matthewmridha/Markdown.git/static/css/main.830e4efb.chunk.css",
+    "main.js": "/matthewmridha/Markdown.git/static/js/main.82f4c052.chunk.js",
+    "main.js.map": "/matthewmridha/Markdown.git/static/js/main.82f4c052.chunk.js.map",
+    "runtime-main.js": "/matthewmridha/Markdown.git/static/js/runtime-main.0430a62b.js",
+    "runtime-main.js.map": "/matthewmridha/Markdown.git/static/js/runtime-main.0430a62b.js.map",
+    "static/js/2.e883e49f.chunk.js": "/matthewmridha/Markdown.git/static/js/2.e883e49f.chunk.js",
+    "static/js/2.e883e49f.chunk.js.map": "/matthewmridha/Markdown.git/static/js/2.e883e49f.chunk.js.map",
+    "index.html": "/matthewmridha/Markdown.git/index.html",
+    "precache-manifest.6c9091e65a69cb060e94e24a330e52d9.js": "/matthewmridha/Markdown.git/precache-manifest.6c9091e65a69cb060e94e24a330e52d9.js",
+    "service-worker.js": "/matthewmridha/Markdown.git/service-worker.js",
+    "static/css/main.830e4efb.chunk.css.map": "/matthewmridha/Markdown.git/static/css/main.830e4efb.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0430a62b.js",
+    "static/js/2.e883e49f.chunk.js",
+    "static/css/main.830e4efb.chunk.css",
+    "static/js/main.82f4c052.chunk.js"
+  ]
+}
